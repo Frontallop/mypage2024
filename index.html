@@ -1,77 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Call Me Pubet</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Easy Quiz</title> 
+   <link rel="stylesheet" href="style.css">
 </head>
-<style>
-    body{
-        background-image: url(bg1.jpg);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size:cover;
-    }
-</style>    
-</body>
+
 <body>
-    <!-- Add image of Joker-->
-    <link rel="stylesheet" href="styles.css">
-    <center>
-    <table>
-        <tr>
-            <td>
-                <img src="Joker.jpg" 
-                style="border-radius: 50%; width: 200px; height: 200px; border-style:dashed;">
-            </td>
-            <td  style="color: aliceblue;">
-                <h1>Pubet Lumkunakorn</h1>
-                <h3>Human Resource Generalist</h3>                
-                <br>
-                CP ALL Public Limited
-                <br><br>
-                <a href="https://www.facebook.com/JobCPALLDCBB/?locale=th_TH">DC.Bangbuathong</a>
-            </td>
-        </tr>
-    </table>
+   <div class="quiz-container">
+      <h2>คำถามข้อแรก มีอยู่ว่า...</h2>
+      <p id="question">HR ย่อมาจากคำว่าอะไร?</p>
+      <button class="button" onclick="checkAnswer('a')">A) Human Resource</button>
+      <button class="button" onclick="checkAnswer('b')">B) Horizontal Rule</button>
+      <button class="button" onclick="checkAnswer('c')">C) Heart Rate</button>
+      <button class="button" onclick="checkAnswer('d')">D) Human Right</button>
+      <p id="result"></p>
 
-    <!--Qoute-->
-    <h3  style="color:rgb(131, 8, 8);">"If you are good at something, <em>NEVER</em> do it for free."</h3>
-    <br>
+  </div>
+  <!-- <br>
+  <div class="quiz-container">
+   <h2>คำถามข้อสุดท้าย มีอยู่ว่า...</h2>
+   <p id="question">ข้อใด <strong>ไม่ใช่?</strong> core function ของงาน HR</p>
+   <button class="button" onclick="checkAnswer('a')">A) การจัดการความขัดแย้ง</button>
+   <button class="button" onclick="checkAnswer('b')">B) บริหารค่าจ้าง</button>
+   <button class="button" onclick="checkAnswer('c')">C) สวัสดิการและแรงงานสัมพันธ์</button>
+   <button class="button" onclick="checkAnswer('d')">D) สรรหาและว่าจ้าง</button>
+   <p id="result"></p>
+   </div> -->
 
-    <!--Contact file-->
-    <a href="contact.html">Contact</a>
-    <br>
-    <hr>
-    
-    <!--Hyperlink-->
-    <br>
-    <table>
-        <thead>
-            <tr>
-              <th>Year</th>
-              <th>Work Place</th>
-            </tr>
-          </thead>
-    
-        <tr>
-            <td>2024 - Present</td>
-            <td>CP ALL: HR Generalist</td>
-        </tr>
-
-        <tr>
-          <td>2022 - 2024</td>
-          <td>Wakanda: Prime Minister</td>
-        </tr>
-
-        <tr>
-           <td>2021 - 2022</td>
-           <td>Twilight Sanctum: Undertaker</td> 
-        </tr>
-    </table>
-</thead>
-
-</center>
+   <script src="index.js" charset="utf-8"></script>
 
 </body>
 </html>
